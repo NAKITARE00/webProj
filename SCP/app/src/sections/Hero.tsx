@@ -20,7 +20,7 @@ export default function Hero() {
 
     return (
         <section className="flex flex-col items-center justify-center py-16 px-4 sm:px-6 md:px-8 bg-neutral-950 text-white">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center max-w-2xl">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-center max-w-2xl">
                 Shaping the future with smart, purpose-driven AI tools—one
                 prompt at a time.
             </h1>
@@ -58,7 +58,7 @@ export default function Hero() {
                 />
                 <button
                     type="submit"
-                    className="border bg-lime-400 text-neutral-950 border-lime-400rounded-full px-6 font-medium  rounded px-4 py-2 mt-2 hover:bg-blue-700 transition"
+                    className="border bg-lime-400 text-neutral-950 border-lime-400 rounded-5 px-6 font-medium  rounded px-4 py-2 mt-2 hover:bg-gray-800 font-bold hover:text-lime-400 transition"
                 >
                     Get Demo
                 </button>
