@@ -87,7 +87,7 @@ export default function Solutions() {
                     </div>
                 </div>
 
-                <h2 className="text-3xl text-black md:text-4xl font-medium mb-10 text-center">
+                <h2 className="text-3xl text-black sm:text-2xl md:text-4xl font-medium mb-10 text-center">
                     Our Solutions
                 </h2>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

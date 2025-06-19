@@ -20,10 +20,10 @@ export default function Hero() {
 
     return (
         <section className="flex flex-col items-center justify-center py-16 px-4 sm:px-6 md:px-8 bg-neutral-950 text-white">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-center max-w-2xl">
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-medium mb-8 text-center max-w-2xl">
                 Shaping the future with smart, purpose-driven AI tools—one
                 prompt at a time.
-            </h1>
+            </h2>
 
             <form
                 onSubmit={handleSubmit}
