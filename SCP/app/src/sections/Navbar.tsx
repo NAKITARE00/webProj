@@ -9,7 +9,6 @@ const navLinks = [
     { label: "Home", href: "#" },
     { label: "Solutions", href: "#solutions" },
     { label: "Contacts", href: "#Contacts" },
-    { label: "FAQs", href: "#faqs" },
 ];
 
 export default function Navbar() {
@@ -47,7 +46,6 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                         {/* Desktop buttons */}
                         <div className="hidden md:flex gap-2">
-                            <Button variant="secondary">Log In</Button>
                             <Button variant="primary">FAQs</Button>
                         </div>
 
