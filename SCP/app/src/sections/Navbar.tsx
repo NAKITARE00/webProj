@@ -41,11 +41,11 @@ export default function Navbar() {
                         ))}
                     </nav>
 
-                    {/* Right Side */}
                     <div className="flex items-center gap-4">
-                        {/* Desktop buttons */}
                         <div className="hidden md:flex gap-2">
-                            <Button variant="primary">FAQs</Button>
+                            <a href="#solutions">
+                                <Button variant="primary">FAQs</Button>
+                            </a>
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -72,7 +72,6 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {/* Mobile Sidebar Menu */}
                 {menuOpen && (
                     <div className="md:hidden mt-2 bg-neutral-950 text-white shadow-lg rounded-lg p-4 animate-slide-down">
                         <nav className="flex flex-col space-y-4 font-medium">
@@ -86,7 +85,12 @@ export default function Navbar() {
                                     {link.label}
                                 </a>
                             ))}
-                            <Button variant="primary">FAQs</Button>
+                            <a
+                                href="#solutions"
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                <Button variant="primary">FAQs</Button>
+                            </a>
                         </nav>
                     </div>
                 )}
