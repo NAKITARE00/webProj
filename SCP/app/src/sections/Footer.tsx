@@ -1,10 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import gmail from "@/assets/images/gmail.png";
-import phone from "@/assets/images/phone.png";
-import address from "@/assets/images/address.png";
-import logo from "@/assets/images/spc.png";
 
 export default function Footer() {
     return (
@@ -17,40 +13,17 @@ export default function Footer() {
                     <ul className="space-y-4 text-sm">
                         <li className="flex items-center gap-3">
                             <Image
-                                src={gmail}
+                                src="/assets/images/gmail.png"
                                 alt="Email"
                                 width={20}
                                 height={20}
                             />
                             <a
-                                href="mailto:info@example.com"
+                                href="mailto: contact@spcltd.net"
                                 className="hover:text-lime-400 transition"
                             >
-                                info@example.com
+                                contact@spcltd.net
                             </a>
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <Image
-                                src={phone}
-                                alt="Phone"
-                                width={20}
-                                height={20}
-                            />
-                            <a
-                                href="tel:+1234567890"
-                                className="hover:text-lime-400 transition"
-                            >
-                                +1 (234) 567-890
-                            </a>
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <Image
-                                src={address}
-                                alt="Address"
-                                width={20}
-                                height={20}
-                            />
-                            <span>123 Main St, Anytown, USA</span>
                         </li>
                     </ul>
                 </div>
@@ -76,9 +49,14 @@ export default function Footer() {
             </div>
             <div className="md:col-span-2 border-t border-gray-700 mt-5 pt-4 flex justify-center">
                 <p className="flex items-center text-lime-300 text-xs gap-2">
-                    <Image src={logo} alt="Logo" width={30} height={30} />
-                    &copy; {new Date().getFullYear()} Your Company. All rights
-                    reserved.
+                    <Image
+                        src="/assets/images/spc.png"
+                        alt="spc"
+                        width={20}
+                        height={20}
+                    />
+                    &copy; {new Date().getFullYear()} ShorePointCapital. All
+                    rights reserved.
                 </p>
             </div>
         </footer>

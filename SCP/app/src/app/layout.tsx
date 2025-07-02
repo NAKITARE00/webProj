@@ -12,9 +12,14 @@ const inter = Inter({
 export const metadata: Metadata = {
     title: "ShorePointCapital",
     description: "",
-    icons: {
-        icon: "/favicon.png",
-    },
+    icons: [
+        {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            url: "/favicon.png",
+        },
+    ],
 };
 
 export default function RootLayout({

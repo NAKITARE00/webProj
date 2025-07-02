@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // other config...
+  output: 'standalone', // Enables standalone mode for better deployment
+  // images: {
+  //   unoptimized: true, // Disables Image Optimization API
+  // },
 };
 
 module.exports = nextConfig;
-
